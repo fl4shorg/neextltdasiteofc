@@ -8,7 +8,7 @@ import MedalhaoCarousel from "@/components/MedalhaoCarousel";
 import Footer from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Smartphone, Download, ExternalLink, BarChart3, Scroll, Clock, Calendar } from "lucide-react";
+import { Smartphone, Download, ExternalLink, BarChart3, Scroll, Clock, Calendar, Construction } from "lucide-react";
 import { useCountdown } from "@/hooks/useCountdown";
 import { useScrollAnimation, useStaggeredAnimation } from "@/hooks/useScrollAnimation";
 
@@ -500,6 +500,24 @@ const Index = () => {
         </div>
       </div>
       
+      <Separator className="w-full my-8" />
+      
+      {/* Em Construção */}
+      <section className="py-20 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="mb-8">
+            <Construction className="w-16 h-16 mx-auto mb-4 text-primary animate-bounce" />
+          </div>
+          <h2 className="text-3xl font-bold mb-4">Em Construção</h2>
+          <p className="text-lg text-muted-foreground mb-6">
+            Estamos trabalhando duro para trazer mais funcionalidades incríveis para você!
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Esta seção do site está sendo desenvolvida. Em breve teremos muito mais conteúdo.
+          </p>
+        </div>
+      </section>
+
       <Separator className="w-full my-8" />
       
       {/* Footer */}
