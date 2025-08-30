@@ -43,9 +43,6 @@ const HeroSection = () => {
     { name: "Instagram", icon: InstagramIcon, color: "bg-pink-500", link: "https://instagram.com/neext" },
   ];
 
-  const handleSocialClick = (link: string) => {
-    window.open(link, '_blank');
-  };
 
   const handleWhatsAppChannel = () => {
     window.open('https://whatsapp.com/channel/0029VaEyxdl6LKKuLcF79P0Z', '_blank');
@@ -135,8 +132,7 @@ const HeroSection = () => {
                 return (
                   <Card 
                     key={platform.name} 
-                    className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-105 border-border/50 hover:border-primary/30"
-                    onClick={() => handleSocialClick(platform.link)}
+                    className="group hover:shadow-lg transition-all duration-300 hover:scale-105 border-border/50 hover:border-primary/30"
                   >
                     <CardContent className="p-6 text-center">
                       <div className={`w-12 h-12 mx-auto mb-3 rounded-full ${platform.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
