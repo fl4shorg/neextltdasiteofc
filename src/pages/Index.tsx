@@ -10,10 +10,17 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Download, ExternalLink, BarChart3, Scroll, Clock, Calendar } from "lucide-react";
 import { useCountdown } from "@/hooks/useCountdown";
+import { useScrollAnimation, useStaggeredAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
   const foundationDate = new Date(2019, 2, 1); // 01/03/2019 (mês é 0-indexed)
   const timeElapsed = useCountdown(foundationDate);
+  
+  // Animações de scroll
+  const { elementRef: appsRef, isVisible: appsVisible } = useScrollAnimation();
+  const { elementRef: historyRef, isVisible: historyVisible } = useScrollAnimation();
+  const { elementRef: counterRef, visibleItems: counterVisible } = useStaggeredAnimation(5, 200);
+  const { elementRef: timezoneRef, isVisible: timezoneVisible } = useScrollAnimation();
 
   return (
     <div className="min-h-screen bg-background">
@@ -29,9 +36,11 @@ const Index = () => {
       <Separator className="w-full my-8" />
       
       {/* Aplicativos Oficiais */}
-      <div className="w-full px-4 py-12 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+      <div ref={appsRef} className="w-full px-4 py-12 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className={`text-center mb-12 transition-all duration-700 ${
+            appsVisible ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Nossos Aplicativos Oficiais
             </h2>
@@ -41,7 +50,9 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-card p-8 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+            <div className={`bg-card p-8 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-700 hover:scale-[1.02] ${
+              appsVisible ? 'animate-scale-in opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+            }`}>
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Smartphone className="w-8 h-8 text-primary" />
@@ -77,7 +88,9 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="bg-card p-8 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+            <div className={`bg-card p-8 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-700 hover:scale-[1.02] delay-200 ${
+              appsVisible ? 'animate-scale-in opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+            }`}>
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 rounded-full bg-secondary/20">
                   <BarChart3 className="w-8 h-8 text-secondary" />
@@ -120,9 +133,11 @@ const Index = () => {
       <Separator className="w-full my-8" />
       
       {/* História da Neext */}
-      <div id="historia-neext" className="w-full px-4 py-16 bg-gradient-to-b from-amber-50/50 via-orange-50/30 to-yellow-50/50 dark:from-amber-900/10 dark:via-orange-900/10 dark:to-yellow-900/10">
+      <div id="historia-neext" ref={historyRef} className="w-full px-4 py-16 bg-gradient-to-b from-amber-50/50 via-orange-50/30 to-yellow-50/50 dark:from-amber-900/10 dark:via-orange-900/10 dark:to-yellow-900/10">
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 p-8 md:p-12 rounded-2xl border-4 border-amber-200 dark:border-amber-700/50 shadow-2xl">
+          <div className={`relative bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 p-8 md:p-12 rounded-2xl border-4 border-amber-200 dark:border-amber-700/50 shadow-2xl transition-all duration-700 ${
+            historyVisible ? 'animate-slide-in-right opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          }`}>
             {/* Decorative corners */}
             <div className="absolute top-4 left-4 w-6 h-6 border-l-4 border-t-4 border-amber-400 dark:border-amber-600"></div>
             <div className="absolute top-4 right-4 w-6 h-6 border-r-4 border-t-4 border-amber-400 dark:border-amber-600"></div>
@@ -161,9 +176,11 @@ const Index = () => {
       <Separator className="w-full my-8" />
       
       {/* Contador desde a Fundação */}
-      <div className="w-full px-4 py-16">
+      <div ref={counterRef} className="w-full px-4 py-16">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 p-6 rounded-2xl text-white shadow-2xl">
+          <div className={`bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 p-6 rounded-2xl text-white shadow-2xl transition-all duration-700 ${
+            counterVisible.size > 0 ? 'animate-scale-in opacity-100 scale-100' : 'opacity-0 scale-95'
+          }`}>
             <div className="flex items-center justify-center gap-2 mb-4">
               <Calendar className="w-5 h-5" />
               <h2 className="text-lg md:text-xl font-bold">
@@ -172,7 +189,9 @@ const Index = () => {
             </div>
             
             <div className="grid grid-cols-5 gap-2 md:gap-4 mb-3">
-              <div className="text-center">
+              <div className={`text-center transition-all duration-500 ${
+                counterVisible.has(0) ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}>
                 <div className="text-2xl md:text-3xl font-bold">
                   {timeElapsed.years.toString().padStart(2, '0')}
                 </div>
@@ -181,7 +200,9 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="text-center">
+              <div className={`text-center transition-all duration-500 ${
+                counterVisible.has(1) ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}>
                 <div className="text-2xl md:text-3xl font-bold">
                   {timeElapsed.days.toString().padStart(2, '0')}
                 </div>
@@ -190,7 +211,9 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="text-center">
+              <div className={`text-center transition-all duration-500 ${
+                counterVisible.has(2) ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}>
                 <div className="text-2xl md:text-3xl font-bold">
                   {timeElapsed.hours.toString().padStart(2, '0')}
                 </div>
@@ -199,7 +222,9 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="text-center">
+              <div className={`text-center transition-all duration-500 ${
+                counterVisible.has(3) ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}>
                 <div className="text-2xl md:text-3xl font-bold">
                   {timeElapsed.minutes.toString().padStart(2, '0')}
                 </div>
@@ -208,7 +233,9 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="text-center">
+              <div className={`text-center transition-all duration-500 ${
+                counterVisible.has(4) ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}>
                 <div className="text-2xl md:text-3xl font-bold">
                   {timeElapsed.seconds.toString().padStart(2, '0')}
                 </div>
@@ -228,9 +255,11 @@ const Index = () => {
       <Separator className="w-full my-8" />
       
       {/* Neextense - Fuso Horário Oficial */}
-      <div className="w-full px-4 py-16 bg-gradient-to-br from-blue-50/30 via-cyan-50/20 to-teal-50/30 dark:from-blue-900/10 dark:via-cyan-900/10 dark:to-teal-900/10">
+      <div ref={timezoneRef} className="w-full px-4 py-16 bg-gradient-to-br from-blue-50/30 via-cyan-50/20 to-teal-50/30 dark:from-blue-900/10 dark:via-cyan-900/10 dark:to-teal-900/10">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-600/5 to-cyan-600/5 dark:from-blue-400/10 dark:to-cyan-400/10 p-8 md:p-12 rounded-2xl border border-blue-200/50 dark:border-blue-700/30 shadow-xl">
+          <div className={`bg-gradient-to-br from-blue-600/5 to-cyan-600/5 dark:from-blue-400/10 dark:to-cyan-400/10 p-8 md:p-12 rounded-2xl border border-blue-200/50 dark:border-blue-700/30 shadow-xl transition-all duration-700 ${
+            timezoneVisible ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
             <div className="text-center">
               <div className="flex items-center justify-center gap-4 mb-8">
                 <div className="p-4 rounded-full bg-blue-100 dark:bg-blue-900/30">
