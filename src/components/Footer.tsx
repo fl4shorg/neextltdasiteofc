@@ -1,24 +1,18 @@
-import { Instagram, Youtube, Music } from "lucide-react";
+import { Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
     {
       name: "Instagram",
       icon: Instagram,
-      url: "https://instagram.com/neext",
+      url: "https://www.instagram.com/neet.tk?igsh=Z3Qyd3hqMTJtcWZ4",
       color: "hover:text-pink-500"
     },
     {
       name: "YouTube",
       icon: Youtube,
-      url: "https://youtube.com/@neext",
+      url: "https://youtube.com/@neetkofc?si=2HLapCXSxJQHIvRA",
       color: "hover:text-red-500"
-    },
-    {
-      name: "TikTok",
-      icon: Music,
-      url: "https://tiktok.com/@neext",
-      color: "hover:text-slate-900 dark:hover:text-white"
     }
   ];
 
