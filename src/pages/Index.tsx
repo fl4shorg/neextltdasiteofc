@@ -295,6 +295,212 @@ const Index = () => {
       
       <Separator className="w-full my-8" />
       
+      {/* Ferramentas de Download */}
+      <div className="w-full px-4 py-16 bg-gradient-to-br from-green-50/30 via-emerald-50/20 to-teal-50/30 dark:from-green-900/10 dark:via-emerald-900/10 dark:to-teal-900/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Ferramentas de Download de Vídeo Gratuitas da Neext
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Baixe vídeos das suas plataformas favoritas de forma rápida e gratuita
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-card p-6 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Download className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-2">TikTok Download</h3>
+                <p className="text-muted-foreground mb-4">Baixe vídeos do TikTok sem marca d'água</p>
+                <Button 
+                  className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700"
+                  onClick={() => window.open('/tiktok-download', '_blank')}
+                >
+                  Acessar Ferramenta
+                </Button>
+              </div>
+            </div>
+            
+            <div className="bg-card p-6 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Download className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-2">Instagram Download</h3>
+                <p className="text-muted-foreground mb-4">Baixe fotos e vídeos do Instagram facilmente</p>
+                <Button 
+                  className="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700"
+                  onClick={() => window.open('/instagram-download', '_blank')}
+                >
+                  Acessar Ferramenta
+                </Button>
+              </div>
+            </div>
+            
+            <div className="bg-card p-6 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Download className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-2">Spotify Download</h3>
+                <p className="text-muted-foreground mb-4">Baixe músicas do Spotify em alta qualidade</p>
+                <Button 
+                  className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
+                  onClick={() => window.open('/spotify-download', '_blank')}
+                >
+                  Acessar Ferramenta
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <Separator className="w-full my-8" />
+      
+      {/* Planos de ADMs */}
+      <div className="w-full px-4 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Planos de ADMs
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Escolha o plano ideal para suas necessidades administrativas
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* ADM VIP */}
+            <div className="bg-card p-8 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-2">ADM VIP</h3>
+                <div className="text-3xl font-bold text-primary mb-4">
+                  R$ 20
+                </div>
+              </div>
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Acesso a 5 grupos
+                </li>
+                <li className="flex items-center text-sm text-muted-foreground">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                  Não tem acesso a contas streaming
+                </li>
+                <li className="flex items-center text-sm text-muted-foreground">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                  Não tem acesso ao grupo VIP
+                </li>
+                <li className="flex items-center text-sm text-muted-foreground">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                  Não tem acesso a 10 grupos
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Não paga taxa
+                </li>
+                <li className="flex items-center text-sm text-muted-foreground">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                  Não tem suporte 24 horas
+                </li>
+              </ul>
+              
+              <Button className="w-full" variant="outline">
+                Escolher Plano
+              </Button>
+            </div>
+            
+            {/* ADM Plus */}
+            <div className="bg-card p-8 rounded-xl border-2 border-primary shadow-lg hover:shadow-xl transition-all duration-300 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                  Mais Popular
+                </span>
+              </div>
+              
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-2">ADM Plus</h3>
+                <div className="text-3xl font-bold text-primary mb-4">
+                  R$ 35
+                </div>
+                <p className="text-sm text-muted-foreground">+ R$ 5/mês taxa</p>
+              </div>
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Acesso a 10 grupos
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Acesso ao grupo VIP
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Contas streaming todos os dias
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Suporte 24 horas
+                </li>
+                <li className="flex items-center text-sm text-orange-600">
+                  <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                  Paga taxa de R$ 5 por mês
+                </li>
+              </ul>
+              
+              <Button className="w-full">
+                Escolher Plano
+              </Button>
+            </div>
+            
+            {/* ADM Enterprise */}
+            <div className="bg-card p-8 rounded-xl border shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-2">ADM Enterprise</h3>
+                <div className="text-3xl font-bold text-primary mb-4">
+                  R$ 50
+                </div>
+                <p className="text-sm text-muted-foreground">Pagamento único</p>
+              </div>
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Acesso a todos os grupos da Neext
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Contas streaming a hora que quiser
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Permanente sem perda com contrato
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Acesso ao grupo VIP
+                </li>
+                <li className="flex items-center text-sm">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Não paga taxa
+                </li>
+              </ul>
+              
+              <Button className="w-full" variant="secondary">
+                Escolher Plano
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <Separator className="w-full my-8" />
       
       {/* Footer */}
       <Footer />
