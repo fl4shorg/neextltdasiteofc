@@ -11,7 +11,7 @@ const medalhoes = [
     id: 12,
     foto: aryProfile,
     nome: "Ary",
-    data: "2022/2025",
+    data: "2022-2025",
     descricao: "Ary foi a primeira diretora mulher e se consagrou como a melhor diretora que o FBI já teve. Sempre deu o seu máximo, com dedicação e lealdade inabalável, jamais traiu a Neext. Esteve presente nos momentos mais difíceis, oferecendo força e apoio, além de ter sido fundamental para o crescimento dos grupos. Sua trajetória inspira respeito, admiração e gratidão eterna.",
     medalhas: [
       { icon: Crown, text: "Primeira Diretora" },
@@ -25,7 +25,7 @@ const medalhoes = [
     id: 13,
     foto: "https://i.ibb.co/CsJ92zgy/da763afbe57a31ecbb41dac7df2e3279.jpg",
     nome: "Wd",
-    data: "2023:2024",
+    data: "2023-2024",
     descricao: "sempre esteve presente ajudando o Skur a bater metas e crescer, contribuindo diariamente de forma significativa para os grupos. Sua dedicação e apoio constante foram fundamentais para a melhoria e evolução de todos, tornando-o um pilar essencial nessa jornada.",
     medalhas: [
       { icon: Trophy, text: "Presença" },
@@ -53,7 +53,7 @@ const medalhoes = [
     id: 3,
     foto: "https://i.ibb.co/ZzGxThQK/b8178ecfffe6133b10c25df1571600a4.jpg",
     nome: "Ruby",
-    data: "2022/2024",
+    data: "2022-2024",
     descricao: "Ruby foi fundamental para acabar com as conspirações e ameaças que estavam cercando a Neext. Sempre apaixonado pela comunidade, ele se destacou ao proteger a Neext contra um movimento de ataques orquestrado pelos ex-diretores do FBI. Mesmo diante de enormes desafios, Ruby contribuiu de maneira decisiva, indo além do que imaginava ser possível para garantir a segurança e a continuidade da plataforma. Sua dedicação e coragem se tornaram vitais para a sobrevivência da Neext, consolidando-o como um verdadeiro pilar da comunidade.",
     medalhas: [
       { icon: Medal, text: "Protetor" },
@@ -67,7 +67,7 @@ const medalhoes = [
     id: 4,
     foto: "https://i.ibb.co/JFkpbddD/032cfdee312bffc59b6d0b439543518a.jpg",
     nome: "vitin",
-    data: "2022:2024",
+    data: "2022-2024",
     descricao: "se destacou de maneira admirável na difícil missão de ajudar a reabrir os Skur, após o fechamento de todos devido à devastação causada pela gestão do ex-diretor. Sua ação foi crucial para restaurar a estabilidade e a confiança em um momento crítico. A situação estava longe de ser fácil, com o legado de falhas e caos deixado pela administração anterior, mas Vitin não se deixou abater. Com determinação e coragem, ele assumiu a responsabilidade de reconstruir o que foi perdido.",
     medalhas: [
       { icon: Trophy, text: "Reconstrutor" },
@@ -81,7 +81,7 @@ const medalhoes = [
     id: 5,
     foto: "https://i.ibb.co/XfYVPffw/3d030b0628a68cb53df08065b65f602c.jpg",
     nome: "Tay",
-    data: "2023:2024",
+    data: "2023-2024",
     descricao: "A melhor Diretora e Chanceler que o Skur já teve. Sua liderança não foi feita apenas de palavras, mas de ações que reconstruíram nosso legado. Cada passo dado, cada desafio superado, carrega a marca da sua dedicação incansável, O Skur renasceu grande porque Tay esteve aqui – não como uma figura passageira, mas como a força que nos moveu. Seu nome ficará para sempre gravado em nossa história como a chanceler e diretora que nos devolveu o orgulho de ser Skur",
     medalhas: [
       { icon: Crown, text: "Chanceler" },
@@ -95,7 +95,7 @@ const medalhoes = [
     id: 6,
     foto: "https://i.ibb.co/GfXfF46x/08e5cdec8d69c518b9c766d73184c173.jpg",
     nome: "Akira",
-    data: "2022:2025",
+    data: "2022-2025",
     descricao: "Akira foi um verdadeiro guardião da Neext na guerra, mostrando lealdade, coragem e honra inabaláveis. Ele cumpriu seus juramentos, se arriscou sem hesitar e protegeu a Neext em todos os momentos, garantindo sua sobrevivência com determinação e sacrifício.",
     medalhas: [
       { icon: Trophy, text: "Guardião" },
@@ -109,7 +109,7 @@ const medalhoes = [
     id: 7,
     foto: "https://i.ibb.co/5XTpCG6H/3a989ca3445661b625c3166b8a3ac04b.jpg",
     nome: "Connie",
-    data: "2024:2025",
+    data: "2024-2025",
     descricao: "Demonstrou ser uma pessoa de confiança e revelou um profundo amor pela Neext. Identificou infiltrados e defendeu a comunidade com firmeza, desmascarando traidores que buscavam prejudicá-la. Sempre se dedicou integralmente e fez tudo pela Neext, colocando seus valores e crescimento em primeiro lugar.",
     medalhas: [
       { icon: Award, text: "Confiável" },
@@ -123,7 +123,7 @@ const medalhoes = [
     id: 8,
     foto: "https://i.ibb.co/4wZLDz80/d276b6a415539d43f790d3654b8c4d04.jpg",
     nome: "Sam",
-    data: "2023:2024",
+    data: "2023-2024",
     descricao: "Sam, além de ser um dos melhores diretores que o Skur já teve, foi o criador do sistema de elo para os grupos. Sua inovação trouxe uma maneira mais estruturada e equilibrada de classificar e avaliar os grupos dentro da plataforma, levando em consideração seu desempenho e contribuição. O sistema de elo permitiu que os grupos fossem organizados de forma justa, criando uma competição saudável e incentivando o aprimoramento contínuo.",
     medalhas: [
       { icon: Crown, text: "Diretor" },
@@ -137,7 +137,7 @@ const medalhoes = [
     id: 9,
     foto: "https://i.ibb.co/vCgsPtML/b9ffc88ad813f68a723558620ce3ff47.jpg",
     nome: "shelby",
-    data: "2022/2025",
+    data: "2022-2025",
     descricao: "Shelby fez um sacrifício pessoal enorme em prol da Neext, colocando a comunidade acima de tudo. Ele desempenhou um papel crucial ao ajudar a derrubar um ditador que ameaçava a liberdade e os valores da plataforma. Além disso, foi Shelby quem fundou o Conselho Neext, estruturando a liderança da comunidade de forma a garantir que ela fosse governada com justiça e transparência",
     medalhas: [
       { icon: Trophy, text: "Fundador" },
@@ -151,7 +151,7 @@ const medalhoes = [
     id: 10,
     foto: "https://i.ibb.co/m56N70nx/10de7fa25943ab474b50d8da1a016c5f.jpg",
     nome: "daniel",
-    data: "2022/2025",
+    data: "2022-2025",
     descricao: "Daniel foi um verdadeiro defensor da Neext, enfrentando inimigos que ameaçavam ela. Mesmo após ser banido, sua lealdade nunca foi abalada—ele sempre colocou a Neext em primeiro lugar, ajudando e protegendo-a sempre que pôde. Seu nome ficou marcado como um símbolo de fidelidade e compromisso, provando que sua conexão com a Neext ia além de qualquer obstáculo.",
     medalhas: [
       { icon: Medal, text: "Defensor" },
@@ -165,7 +165,7 @@ const medalhoes = [
     id: 11,
     foto: medalhaoRany,
     nome: "Rany",
-    data: "2023/2025",
+    data: "2023-2025",
     descricao: "Rany, a melhor diretora que o Skur tem atualmente, seguiu o legado deixado por todos e está sempre ajudando e fazendo o Skur evoluir, sem jamais abandoná-lo.",
     medalhas: [
       { icon: Crown, text: "Diretora" },
