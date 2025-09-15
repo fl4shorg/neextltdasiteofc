@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { 
   BarChart3, 
   FileText, 
@@ -31,15 +31,15 @@ import {
 } from "@/components/ui/sidebar";
 
 const menuItems = [
-  { title: "Apostila FBI", url: "https://apostila-fbi.neext.com.br", icon: FileText, color: "text-red-500", external: true },
-  { title: "Apostila Skur", url: "https://apostila-skur.neext.com.br", icon: FileText, color: "text-pink-500", external: true },
-  { title: "Gerador de Certificado", url: "https://certificado.neext.com.br", icon: Award, color: "text-purple-600", external: true },
-  { title: "Gerador de Rank", url: "https://rank.neext.com.br", icon: Trophy, color: "text-yellow-500", external: true },
-  { title: "Gerador de relatório", url: "https://www.neext.online/report", icon: FileBarChart, color: "text-green-500", external: true },
-  { title: "Jornal Neext", url: "https://jornal.neext.com.br", icon: Newspaper, color: "text-red-600", external: true },
-  { title: "Card generator", url: "https://card-generator.neext.com.br", icon: CreditCard, color: "text-blue-400", external: true },
-  { title: "Criar arquivos", url: "https://criar-arquivos.neext.com.br", icon: FolderOpen, color: "text-purple-500", external: true },
-  { title: "Cartório Neext", url: "https://cartorio.neext.com.br", icon: Plus, color: "text-red-500", external: true },
+  { title: "Apostila FBI", url: "/apostilafbi", icon: FileText, color: "text-red-500", external: false },
+  { title: "Apostila Skur", url: "/apostilaskur", icon: FileText, color: "text-pink-500", external: false },
+  { title: "Gerador de Certificado", url: "/certificado", icon: Award, color: "text-purple-600", external: false },
+  { title: "Gerador de Rank", url: "/rank", icon: Trophy, color: "text-yellow-500", external: false },
+  { title: "Gerador de relatório", url: "/report", icon: FileBarChart, color: "text-green-500", external: false },
+  { title: "Jornal Neext", url: "/jornal", icon: Newspaper, color: "text-red-600", external: false },
+  { title: "Card generator", url: "/card", icon: CreditCard, color: "text-blue-400", external: false },
+  { title: "Criar arquivos", url: "/vcf", icon: FolderOpen, color: "text-purple-500", external: false },
+  { title: "Cartório Neext", url: "/cartório", icon: Plus, color: "text-red-500", external: false },
   { title: "Avisos", url: "https://avisos.neext.com.br", icon: AlertTriangle, color: "text-orange-500", external: true },
   { title: "Fuso Horário Neextense", url: "https://neextense.neext.com.br", icon: Clock, color: "text-gray-500", external: true },
 ];
@@ -50,6 +50,7 @@ interface AppSidebarProps {
 }
 
 export function AppSidebar({ open, onClose }: AppSidebarProps) {
+  const navigate = useNavigate();
   return (
     <>
       {/* Overlay */}
@@ -87,7 +88,7 @@ export function AppSidebar({ open, onClose }: AppSidebarProps) {
           <div className="space-y-2">
             {menuItems.map((item) => {
               const Icon = item.icon;
-              return (
+              return item.external ? (
                 <a
                   key={item.title}
                   href={item.url}
@@ -103,6 +104,22 @@ export function AppSidebar({ open, onClose }: AppSidebarProps) {
                     {item.title}
                   </span>
                 </a>
+              ) : (
+                <button
+                  key={item.title}
+                  onClick={() => {
+                    navigate(item.url);
+                    onClose();
+                  }}
+                  className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group hover:bg-muted/70 text-foreground hover:shadow-sm text-left"
+                >
+                  <div className={`p-2 rounded-lg ${item.color} bg-current/10`}>
+                    <Icon className={`w-5 h-5 ${item.color}`} />
+                  </div>
+                  <span className="font-medium text-sm leading-tight">
+                    {item.title}
+                  </span>
+                </button>
               );
             })}
           </div>

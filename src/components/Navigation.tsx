@@ -3,9 +3,9 @@ import { TrendingUp, Newspaper, HardDrive, Sparkles, Gift } from "lucide-react";
 
 const Navigation = () => {
   const navItems = [
-    { name: "Level", icon: TrendingUp, url: "/level" },
-    { name: "NNN NEWS", icon: Newspaper, url: "/nnn-news" },
-    { name: "Backup", icon: HardDrive, url: "/backup" },
+    { name: "Level", icon: TrendingUp, url: "/round6" },
+    { name: "NNN NEWS", icon: Newspaper, url: "https://whatsapp.com/channel/0029VbAIEWqIHphCViJIqx3l" },
+    { name: "Backup", icon: HardDrive, url: "/Phagex" },
     { name: "Novidades", icon: Sparkles, url: "/novidades" },
     { name: "Giftcard", icon: Gift, url: "https://www.neext.online/redeem" }
   ];
