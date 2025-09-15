@@ -37,7 +37,7 @@ const HeroSection = () => {
   );
 
   const socialPlatforms = [
-    { name: "WhatsApp", icon: WhatsAppIcon, color: "bg-green-500", link: "https://whatsapp.com/channel/0029VaEyxdl6LKKuLcF79P0Z" },
+    { name: "WhatsApp", icon: WhatsAppIcon, color: "bg-green-500", link: "https://whatsapp.com/channel/0029Vacb5xJKrWQpjjJgwi1z" },
     { name: "Telegram", icon: Send, color: "bg-blue-500", link: "https://t.me/neext" },
     { name: "Discord", icon: DiscordIcon, color: "bg-indigo-500", link: "https://discord.gg/neext" },
     { name: "Instagram", icon: InstagramIcon, color: "bg-pink-500", link: "https://instagram.com/neext" },
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
 
   const handleWhatsAppChannel = () => {
-    window.open('https://whatsapp.com/channel/0029VaEyxdl6LKKuLcF79P0Z', '_blank');
+    window.open('https://whatsapp.com/channel/0029Vacb5xJKrWQpjjJgwi1z', '_blank');
   };
 
   const handleKnowCommunity = () => {
