@@ -150,7 +150,7 @@ const medalhoes = [
   {
     id: 10,
     foto: "https://i.ibb.co/m56N70nx/10de7fa25943ab474b50d8da1a016c5f.jpg",
-    nome: "daniel",
+    nome: "Daniel",
     data: "2022-2025",
     descricao: "Daniel foi um verdadeiro defensor da Neext, enfrentando inimigos que ameaçavam ela. Mesmo após ser banido, sua lealdade nunca foi abalada—ele sempre colocou a Neext em primeiro lugar, ajudando e protegendo-a sempre que pôde. Seu nome ficou marcado como um símbolo de fidelidade e compromisso, provando que sua conexão com a Neext ia além de qualquer obstáculo.",
     medalhas: [
@@ -178,7 +178,7 @@ const medalhoes = [
   {
     id: 1,
     foto: "https://i.ibb.co/Ndn8qBb0/8b0181313e4426c97a4dc9acd2076840.jpg",
-    nome: "koala",
+    nome: "Koala",
     data: "2019-2024",
     descricao: "ato de coragem e devoção que marcou a história da Neext. Koala, com bravura inigualável, enfrentou a adversidade e impediu um golpe de estado arquitetado pela Team Lobos. Em um momento crítico, colocou a neext acima de si mesmo, garantindo a continuidade da neext.",
     medalhas: [
