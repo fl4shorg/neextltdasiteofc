@@ -66,7 +66,7 @@ const medalhoes = [
   {
     id: 4,
     foto: "https://i.ibb.co/JFkpbddD/032cfdee312bffc59b6d0b439543518a.jpg",
-    nome: "vitin",
+    nome: "Vitin",
     data: "2022-2024",
     descricao: "se destacou de maneira admirável na difícil missão de ajudar a reabrir os Skur, após o fechamento de todos devido à devastação causada pela gestão do ex-diretor. Sua ação foi crucial para restaurar a estabilidade e a confiança em um momento crítico. A situação estava longe de ser fácil, com o legado de falhas e caos deixado pela administração anterior, mas Vitin não se deixou abater. Com determinação e coragem, ele assumiu a responsabilidade de reconstruir o que foi perdido.",
     medalhas: [
@@ -136,7 +136,7 @@ const medalhoes = [
   {
     id: 9,
     foto: "https://i.ibb.co/vCgsPtML/b9ffc88ad813f68a723558620ce3ff47.jpg",
-    nome: "shelby",
+    nome: "Shelby",
     data: "2022-2025",
     descricao: "Shelby fez um sacrifício pessoal enorme em prol da Neext, colocando a comunidade acima de tudo. Ele desempenhou um papel crucial ao ajudar a derrubar um ditador que ameaçava a liberdade e os valores da plataforma. Além disso, foi Shelby quem fundou o Conselho Neext, estruturando a liderança da comunidade de forma a garantir que ela fosse governada com justiça e transparência",
     medalhas: [
