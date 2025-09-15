@@ -50,6 +50,20 @@ const medalhoes = [
     ]
   },
   {
+    id: 14,
+    foto: "https://i.ibb.co/rGqMs0LH/c894e9eecb8ba216208e6387957e7be7.jpg",
+    nome: "Batman",
+    data: "2022-2022",
+    descricao: "Batman, defensor leal da comunidade e das pessoas kpop e LGBT. Responsável por criar a regra todes, sempre viveu sua verdade sem vergonha de se expressar. Gay desde cedo, ajudou muito a Neext a crescer e ficou marcado como o todes mais gay de todos.",
+    medalhas: [
+      { icon: Crown, text: "Defensor" },
+      { icon: Award, text: "LGBT+" },
+      { icon: Star, text: "Autêntico" },
+      { icon: Trophy, text: "Criador" },
+      { icon: Medal, text: "Orgulho" }
+    ]
+  },
+  {
     id: 2,
     foto: "https://i.ibb.co/chzJbwLk/656ba6b581717ee5ef636b9502c04dd0.jpg",
     nome: "Gus",
