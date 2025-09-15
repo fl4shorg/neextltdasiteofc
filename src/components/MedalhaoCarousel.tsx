@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight, Medal, Award, Trophy, Crown, Star } from "lucide-react";
 import { useCallback } from 'react';
 import medalhaoRany from "@/assets/medalha-rany.jpg";
+import aryProfile from "@/assets/ary-profile.jpg";
 
 const medalhoes = [
   {
@@ -158,6 +159,20 @@ const medalhoes = [
       { icon: Star, text: "Evolução" },
       { icon: Trophy, text: "Lealdade" },
       { icon: Medal, text: "Dedicação" }
+    ]
+  },
+  {
+    id: 12,
+    foto: aryProfile,
+    nome: "Ary",
+    data: "2022/2025",
+    descricao: "Ary foi a primeira diretora mulher e se consagrou como a melhor diretora que o FBI já teve. Sempre deu o seu máximo, com dedicação e lealdade inabalável, jamais traiu a Neext. Esteve presente nos momentos mais difíceis, oferecendo força e apoio, além de ter sido fundamental para o crescimento dos grupos. Sua trajetória inspira respeito, admiração e gratidão eterna.",
+    medalhas: [
+      { icon: Crown, text: "Primeira Diretora" },
+      { icon: Award, text: "Melhor Diretora" },
+      { icon: Trophy, text: "Dedicação" },
+      { icon: Star, text: "Lealdade" },
+      { icon: Medal, text: "Pioneira" }
     ]
   }
 ];
