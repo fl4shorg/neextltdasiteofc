@@ -9,10 +9,8 @@ import NotFound from "./pages/NotFound";
 import Painel from "./pages/Painel";
 import ApostilaFBI from "./pages/ApostilaFBI";
 import Contato from "./pages/Contato";
-import Neextense from "./pages/Neextense";
-import TikTok from "./pages/TikTok";
-import Instagram from "./pages/Instagram";
-import Spotify from "./pages/Spotify";
+import RedirectRoute from "./components/RedirectRoute";
+import { externalRoutes } from "./routes/external";
 
 const queryClient = new QueryClient();
 
@@ -28,10 +26,10 @@ const App = () => (
             <Route path="/painel" element={<Painel />} />
             <Route path="/apostila-fbi" element={<ApostilaFBI />} />
             <Route path="/contato" element={<Contato />} />
-            <Route path="/neextense" element={<Neextense />} />
-            <Route path="/tiktok" element={<TikTok />} />
-            <Route path="/Instagram" element={<Instagram />} />
-            <Route path="/spotify" element={<Spotify />} />
+            <Route path="/neextense" element={<RedirectRoute to={externalRoutes["/neextense"]} />} />
+            <Route path="/tiktok" element={<RedirectRoute to={externalRoutes["/tiktok"]} />} />
+            <Route path="/Instagram" element={<RedirectRoute to={externalRoutes["/Instagram"]} />} />
+            <Route path="/spotify" element={<RedirectRoute to={externalRoutes["/spotify"]} />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
