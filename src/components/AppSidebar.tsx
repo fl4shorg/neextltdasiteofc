@@ -31,15 +31,15 @@ import {
 } from "@/components/ui/sidebar";
 
 const menuItems = [
-  { title: "Apostila FBI", url: "/apostilafbi", icon: FileText, color: "text-red-500", external: false },
-  { title: "Apostila Skur", url: "/apostilaskur", icon: FileText, color: "text-pink-500", external: false },
-  { title: "Gerador de Certificado", url: "/certificado", icon: Award, color: "text-purple-600", external: false },
-  { title: "Gerador de Rank", url: "/rank", icon: Trophy, color: "text-yellow-500", external: false },
-  { title: "Gerador de relatório", url: "/report", icon: FileBarChart, color: "text-green-500", external: false },
-  { title: "Jornal Neext", url: "/jornal", icon: Newspaper, color: "text-red-600", external: false },
-  { title: "Card generator", url: "/card", icon: CreditCard, color: "text-blue-400", external: false },
-  { title: "Criar arquivos", url: "/vcf", icon: FolderOpen, color: "text-purple-500", external: false },
-  { title: "Cartório Neext", url: "/cartório", icon: Plus, color: "text-red-500", external: false },
+  { title: "Apostila FBI", url: "https://www.neext.online/apostilafbi", icon: FileText, color: "text-red-500", external: true },
+  { title: "Apostila Skur", url: "https://www.neext.online/apostilaskur", icon: FileText, color: "text-pink-500", external: true },
+  { title: "Gerador de Certificado", url: "https://www.neext.online/certificado", icon: Award, color: "text-purple-600", external: true },
+  { title: "Gerador de Rank", url: "https://www.neext.online/rank", icon: Trophy, color: "text-yellow-500", external: true },
+  { title: "Gerador de relatório", url: "https://www.neext.online/report", icon: FileBarChart, color: "text-green-500", external: true },
+  { title: "Jornal Neext", url: "https://www.neext.online/jornal", icon: Newspaper, color: "text-red-600", external: true },
+  { title: "Card generator", url: "https://www.neext.online/card", icon: CreditCard, color: "text-blue-400", external: true },
+  { title: "Criar arquivos", url: "https://www.neext.online/vcf", icon: FolderOpen, color: "text-purple-500", external: true },
+  { title: "Cartório Neext", url: "https://www.neext.online/cartório", icon: Plus, color: "text-red-500", external: true },
   { title: "Avisos", url: "https://avisos.neext.com.br", icon: AlertTriangle, color: "text-orange-500", external: true },
   { title: "Fuso Horário Neextense", url: "https://neextense.neext.com.br", icon: Clock, color: "text-gray-500", external: true },
 ];
