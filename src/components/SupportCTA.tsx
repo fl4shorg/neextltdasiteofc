@@ -1,12 +1,9 @@
 import { Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 
 const SupportCTA = () => {
-  const navigate = useNavigate();
-  
   const handleSupportClick = () => {
-    navigate('/contato');
+    window.open('https://www.neext.online/contato', '_blank');
   };
 
   return (
