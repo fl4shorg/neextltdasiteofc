@@ -22,6 +22,20 @@ const medalhoes = [
     ]
   },
   {
+    id: 13,
+    foto: "https://i.ibb.co/CsJ92zgy/da763afbe57a31ecbb41dac7df2e3279.jpg",
+    nome: "Wd",
+    data: "2023:2024",
+    descricao: "sempre esteve presente ajudando o Skur a bater metas e crescer, contribuindo diariamente de forma significativa para os grupos. Sua dedicação e apoio constante foram fundamentais para a melhoria e evolução de todos, tornando-o um pilar essencial nessa jornada.",
+    medalhas: [
+      { icon: Trophy, text: "Presença" },
+      { icon: Award, text: "Suporte" },
+      { icon: Star, text: "Dedicação" },
+      { icon: Medal, text: "Constância" },
+      { icon: Crown, text: "Pilar" }
+    ]
+  },
+  {
     id: 2,
     foto: "https://i.ibb.co/chzJbwLk/656ba6b581717ee5ef636b9502c04dd0.jpg",
     nome: "Gus",
