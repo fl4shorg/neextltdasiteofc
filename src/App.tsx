@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Painel from "./pages/Painel";
 import ApostilaFBI from "./pages/ApostilaFBI";
+import Contato from "./pages/Contato";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/painel" element={<Painel />} />
             <Route path="/apostila-fbi" element={<ApostilaFBI />} />
+            <Route path="/contato" element={<Contato />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

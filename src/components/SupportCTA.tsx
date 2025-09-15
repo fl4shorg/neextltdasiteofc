@@ -1,10 +1,12 @@
 import { Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const SupportCTA = () => {
+  const navigate = useNavigate();
+  
   const handleSupportClick = () => {
-    // Aqui você pode adicionar a lógica de suporte
-    window.open("https://wa.me/5532983841897?text=Olá! Preciso de suporte.", "_blank");
+    navigate('/contato');
   };
 
   return (
