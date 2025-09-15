@@ -36,6 +36,20 @@ const medalhoes = [
     ]
   },
   {
+    id: 11,
+    foto: medalhaoRany,
+    nome: "Rany",
+    data: "2023-2025",
+    descricao: "Rany, a melhor diretora que o Skur tem atualmente, seguiu o legado deixado por todos e está sempre ajudando e fazendo o Skur evoluir, sem jamais abandoná-lo.",
+    medalhas: [
+      { icon: Crown, text: "Diretora" },
+      { icon: Award, text: "Legado" },
+      { icon: Star, text: "Evolução" },
+      { icon: Trophy, text: "Lealdade" },
+      { icon: Medal, text: "Dedicação" }
+    ]
+  },
+  {
     id: 2,
     foto: "https://i.ibb.co/chzJbwLk/656ba6b581717ee5ef636b9502c04dd0.jpg",
     nome: "Gus",
@@ -159,20 +173,6 @@ const medalhoes = [
       { icon: Award, text: "Fiel" },
       { icon: Trophy, text: "Protetor" },
       { icon: Crown, text: "Símbolo" }
-    ]
-  },
-  {
-    id: 11,
-    foto: medalhaoRany,
-    nome: "Rany",
-    data: "2023-2025",
-    descricao: "Rany, a melhor diretora que o Skur tem atualmente, seguiu o legado deixado por todos e está sempre ajudando e fazendo o Skur evoluir, sem jamais abandoná-lo.",
-    medalhas: [
-      { icon: Crown, text: "Diretora" },
-      { icon: Award, text: "Legado" },
-      { icon: Star, text: "Evolução" },
-      { icon: Trophy, text: "Lealdade" },
-      { icon: Medal, text: "Dedicação" }
     ]
   },
   {
