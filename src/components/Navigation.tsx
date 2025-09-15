@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Newspaper, HardDrive, Sparkles } from "lucide-react";
+import { TrendingUp, Newspaper, HardDrive, Sparkles, Gift } from "lucide-react";
 
 const Navigation = () => {
   const navItems = [
     { name: "Level", icon: TrendingUp, url: "/level" },
     { name: "NNN NEWS", icon: Newspaper, url: "/nnn-news" },
     { name: "Backup", icon: HardDrive, url: "/backup" },
-    { name: "Novidades", icon: Sparkles, url: "/novidades" }
+    { name: "Novidades", icon: Sparkles, url: "/novidades" },
+    { name: "Giftcard", icon: Gift, url: "https://www.neext.online/redeem" }
   ];
 
   return (
