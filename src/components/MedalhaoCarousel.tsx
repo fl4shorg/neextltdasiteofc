@@ -8,17 +8,17 @@ import aryProfile from "@/assets/ary-profile.jpg";
 
 const medalhoes = [
   {
-    id: 1,
-    foto: "https://i.ibb.co/Ndn8qBb0/8b0181313e4426c97a4dc9acd2076840.jpg",
-    nome: "koala",
-    data: "2019-2024",
-    descricao: "ato de coragem e devoção que marcou a história da Neext. Koala, com bravura inigualável, enfrentou a adversidade e impediu um golpe de estado arquitetado pela Team Lobos. Em um momento crítico, colocou a neext acima de si mesmo, garantindo a continuidade da neext.",
+    id: 12,
+    foto: aryProfile,
+    nome: "Ary",
+    data: "2022/2025",
+    descricao: "Ary foi a primeira diretora mulher e se consagrou como a melhor diretora que o FBI já teve. Sempre deu o seu máximo, com dedicação e lealdade inabalável, jamais traiu a Neext. Esteve presente nos momentos mais difíceis, oferecendo força e apoio, além de ter sido fundamental para o crescimento dos grupos. Sua trajetória inspira respeito, admiração e gratidão eterna.",
     medalhas: [
-      { icon: Trophy, text: "Corajoso" },
-      { icon: Star, text: "Protetor" },
-      { icon: Award, text: "Herói" },
-      { icon: Medal, text: "Leal" },
-      { icon: Crown, text: "Defensor" }
+      { icon: Crown, text: "Primeira Diretora" },
+      { icon: Award, text: "Melhor Diretora" },
+      { icon: Trophy, text: "Dedicação" },
+      { icon: Star, text: "Lealdade" },
+      { icon: Medal, text: "Pioneira" }
     ]
   },
   {
@@ -162,17 +162,17 @@ const medalhoes = [
     ]
   },
   {
-    id: 12,
-    foto: aryProfile,
-    nome: "Ary",
-    data: "2022/2025",
-    descricao: "Ary foi a primeira diretora mulher e se consagrou como a melhor diretora que o FBI já teve. Sempre deu o seu máximo, com dedicação e lealdade inabalável, jamais traiu a Neext. Esteve presente nos momentos mais difíceis, oferecendo força e apoio, além de ter sido fundamental para o crescimento dos grupos. Sua trajetória inspira respeito, admiração e gratidão eterna.",
+    id: 1,
+    foto: "https://i.ibb.co/Ndn8qBb0/8b0181313e4426c97a4dc9acd2076840.jpg",
+    nome: "koala",
+    data: "2019-2024",
+    descricao: "ato de coragem e devoção que marcou a história da Neext. Koala, com bravura inigualável, enfrentou a adversidade e impediu um golpe de estado arquitetado pela Team Lobos. Em um momento crítico, colocou a neext acima de si mesmo, garantindo a continuidade da neext.",
     medalhas: [
-      { icon: Crown, text: "Primeira Diretora" },
-      { icon: Award, text: "Melhor Diretora" },
-      { icon: Trophy, text: "Dedicação" },
-      { icon: Star, text: "Lealdade" },
-      { icon: Medal, text: "Pioneira" }
+      { icon: Trophy, text: "Corajoso" },
+      { icon: Star, text: "Protetor" },
+      { icon: Award, text: "Herói" },
+      { icon: Medal, text: "Leal" },
+      { icon: Crown, text: "Defensor" }
     ]
   }
 ];
