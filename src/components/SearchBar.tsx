@@ -109,14 +109,14 @@ const SearchBar = () => {
       title: "App Neext",
       description: "Aplicativo principal da plataforma Neext",
       icon: Smartphone,
-      action: () => window.location.href = '/download-app'
+      action: () => window.open('https://www.neext.online/appoficial', '_blank')
     },
     {
       id: "painel-neext",
       title: "Painel Neext", 
       description: "Gestão profissional e métricas detalhadas",
       icon: BarChart3,
-      action: () => window.location.href = '/download-painel'
+      action: () => window.open('https://www.neext.online/download', '_blank')
     },
     // Seções da página
     {
@@ -148,7 +148,7 @@ const SearchBar = () => {
       title: "Neextense",
       description: "Fuso horário oficial da Neext",
       icon: Clock,
-      action: () => window.open('https://neext.com/neextense', '_blank')
+      action: () => window.location.href = '/#/neextense'
     },
     // Redes sociais e canais
     {
@@ -156,7 +156,7 @@ const SearchBar = () => {
       title: "Instagram",
       description: "Perfil oficial no Instagram",
       icon: Camera,
-      action: () => window.open("https://instagram.com", "_blank")
+      action: () => window.location.href = '/#/Instagram'
     },
     {
       id: "whatsapp-canal",

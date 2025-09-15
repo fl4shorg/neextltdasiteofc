@@ -11,8 +11,10 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, Download, ExternalLink, BarChart3, Scroll, Clock, Calendar, Construction } from "lucide-react";
 import { useCountdown } from "@/hooks/useCountdown";
 import { useScrollAnimation, useStaggeredAnimation } from "@/hooks/useScrollAnimation";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
   const foundationDate = new Date(2019, 2, 1); // 01/03/2019 (mês é 0-indexed)
   const timeElapsed = useCountdown(foundationDate);
   
@@ -73,7 +75,7 @@ const Index = () => {
               <div className="flex gap-3">
                 <Button 
                   className="flex-1 bg-primary hover:bg-primary/90"
-                  onClick={() => window.location.href = '/download-app'}
+                  onClick={() => window.open('https://www.neext.online/appoficial', '_blank')}
                 >
                   <Download className="w-4 h-4 mr-2" />
                   Baixar Agora
@@ -81,7 +83,7 @@ const Index = () => {
                 <Button 
                   variant="outline" 
                   size="icon"
-                  onClick={() => window.location.href = '/app-info'}
+                  onClick={() => window.open('https://www.neext.online/appoficial', '_blank')}
                 >
                   <ExternalLink className="w-4 h-4" />
                 </Button>
@@ -112,7 +114,7 @@ const Index = () => {
                 <Button 
                   variant="secondary" 
                   className="flex-1"
-                  onClick={() => window.location.href = '/download-painel'}
+                  onClick={() => window.open('https://www.neext.online/download', '_blank')}
                 >
                   <Download className="w-4 h-4 mr-2" />
                   Baixar Agora
@@ -120,7 +122,7 @@ const Index = () => {
                 <Button 
                   variant="outline" 
                   size="icon"
-                  onClick={() => window.location.href = '/painel-info'}
+                  onClick={() => window.open('https://www.neext.online/download', '_blank')}
                 >
                   <ExternalLink className="w-4 h-4" />
                 </Button>
@@ -282,7 +284,7 @@ const Index = () => {
                 <Button 
                   size="sm"
                   className="bg-blue-600 hover:bg-blue-700 text-white"
-                  onClick={() => window.open('https://neext.com/neextense', '_blank')}
+                  onClick={() => navigate('/neextense')}
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Saiba Mais
@@ -317,7 +319,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">Baixe vídeos do TikTok sem marca d'água</p>
                 <Button 
                   className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700"
-                  onClick={() => window.open('/tiktok-download', '_blank')}
+                  onClick={() => navigate('/tiktok')}
                 >
                   Acessar Ferramenta
                 </Button>
@@ -333,7 +335,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">Baixe fotos e vídeos do Instagram facilmente</p>
                 <Button 
                   className="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700"
-                  onClick={() => window.open('/instagram-download', '_blank')}
+                  onClick={() => navigate('/Instagram')}
                 >
                   Acessar Ferramenta
                 </Button>
@@ -349,7 +351,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">Baixe músicas do Spotify em alta qualidade</p>
                 <Button 
                   className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
-                  onClick={() => window.open('/spotify-download', '_blank')}
+                  onClick={() => navigate('/spotify')}
                 >
                   Acessar Ferramenta
                 </Button>
