@@ -35,7 +35,7 @@ const menuItems = [
   { title: "Apostila Skur", url: "https://apostila-skur.neext.com.br", icon: FileText, color: "text-pink-500", external: true },
   { title: "Gerador de Certificado", url: "https://certificado.neext.com.br", icon: Award, color: "text-purple-600", external: true },
   { title: "Gerador de Rank", url: "https://rank.neext.com.br", icon: Trophy, color: "text-yellow-500", external: true },
-  { title: "Gerador de relatório", url: "https://relatorio.neext.com.br", icon: FileBarChart, color: "text-green-500", external: true },
+  { title: "Gerador de relatório", url: "https://www.neext.online/report", icon: FileBarChart, color: "text-green-500", external: true },
   { title: "Jornal Neext", url: "https://jornal.neext.com.br", icon: Newspaper, color: "text-red-600", external: true },
   { title: "Card generator", url: "https://card-generator.neext.com.br", icon: CreditCard, color: "text-blue-400", external: true },
   { title: "Criar arquivos", url: "https://criar-arquivos.neext.com.br", icon: FolderOpen, color: "text-purple-500", external: true },
